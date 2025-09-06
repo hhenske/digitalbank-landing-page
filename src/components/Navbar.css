@@ -4,5 +4,15 @@ nav {
     align-items: center;
     width: 100%;
     min-width: 320px;
+    height: 60px;
+    /* background-color: blue; */
 }
+.logo {
+    width: 10rem;
+}
+.hamburger {
+    width: 2rem;
+    margin-left: 1rem;
+}
+
 

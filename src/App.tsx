@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Features from "./components/Features";
 import Articles from "./components/Articles";
 import Footer from "./components/Footer";
+import './App.css';
 
 function App() {
   return (

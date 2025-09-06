@@ -1,7 +1,19 @@
 /* src/styles.css */
+:root {
+  /* Primary */
+  --blue-150: hsl(233, 26%, 24%);
+  --green-500: hsl(136, 64%, 51%);
+  --cyan-400: hsl(192, 69%, 51%);
+  /* Neutral */
+  --gray-600: hsl(233, 8%, 62%);
+  --gray-100: hsl(220, 16%, 96%);
+  --gray-50: hsl(0, 0%, 98%);
+  --white: hsl(0, 100%, 100%);
+}
+
 * {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   box-sizing: border-box;
 }
 
@@ -15,7 +27,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
-  max-width: 375px;
-  min-width: 320px;
+  /* max-width: 375px;
+  min-width: 320px; */
+  width: 375px;
   margin: 0 auto;
 }

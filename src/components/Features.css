@@ -1,17 +1,79 @@
 .feature-header {
-    background-color: var(--gray-100);
+  background: linear-gradient(135deg, var(--gray-50) 0%, var(--gray-100) 100%);
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-weight: 700;
-  font: var(--blue-150);
-  font-size: 36px;
-  text-align: center;
+  font-size: 2.15rem; /* Larger for impact */
+  font-weight: 300; /* Light weight from style guide */
+  color: var(--blue-950);
+  line-height: 1.1;
+  margin-bottom: 24px;
+  max-width: 400px;
+  font-family: 'Public Sans', sans-serif;
 }
 
 p {
-    font: var(--gray-100);
-    font-size: 14px;
+  font-size: 18px; /* Exact body copy size from style guide */
+  font-weight: 400;
+  color: var(--gray-600);
+  line-height: 1.0;
+  margin-bottom: 32px;
+  max-width: 350px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--green-500), var(--cyan-400));
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Public Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px hsla(192, 69%, 51%, 0.3);
+  width: 200px;
+}
+
+.feature-icon {
+    width: 100px;
+    margin-left: 35%;
+    margin-right: 35%;    
+}
+
+h2 {
+    font-size: 1.75rem; /* Larger for impact */
+    font-weight: 400; /* Light weight from style guide */
+    color: var(--blue-950);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    max-width: 400px;
+    /* font-family: 'Public Sans', sans-serif; */
     text-align: center;
-    letter-spacing: 0px;
+}
+
+.features-container p{
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.45rem; /* Larger for impact */
+    font-weight: 400; /* Light weight from style guide */
+    color: var(--blue-950);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    /* font-family: 'Public Sans', sans-serif; */
+    text-align: center;
 }

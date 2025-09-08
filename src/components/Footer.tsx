@@ -20,7 +20,8 @@ const Footer = () => {
         <li>Support</li>
         <li>Privacy Policy</li>
       </ul>
-      <button className="cta-button">Request Invite</button>   
+      <button className="cta-button">Request Invite</button>
+        <p className="copyright">© Digitalbank. All Rights Reserved</p>
     </footer>
   );
 };

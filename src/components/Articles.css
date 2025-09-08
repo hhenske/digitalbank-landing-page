@@ -3,44 +3,52 @@
     flex-direction: column;
     text-align: center;
     width: 375px;
+    background-color: var(--gray-100);
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.articles-container img {
+    margin: 15px 20px;
+    border-radius: 10px;
+    width: 95%;
 }
 
 h2 {
-  font-size: 2.15rem; /* Larger for impact */
+  font-size: 1.9rem; /* Larger for impact */
   font-weight: 300; /* Light weight from style guide */
   color: var(--blue-950);
   line-height: 1.1;
   margin-bottom: 24px;
+  margin-top: 24px;
   font-family: 'Public Sans', sans-serif;
   
 }
 
 .article {
     text-align: left;
-    margin-right: 25px;
-    margin-left: 25px;
     max-width: 335px;
-    padding: 0;
+    padding: 0 25px;
+    width: 95%;
+    background-color: white;
 }
 
-.body {
+.reg-body {
     text-align: left;
-    font-size: 1.25rem; /* Larger for impact */
-    font-weight: 400; /* Light weight from style guide */
-    color: var(--blue-950);
-    line-height: 1.1;
+    font-size: 1rem; /* Larger for impact */
+    font-weight: 300; /* Light weight from style guide */
+    color: var(--gray-600);
     max-width: 400px;
 }
 
 .small-body {
     text-align: left;
-    font-size: .95rem; /* Larger for impact */
+    font-size: .85rem; /* Larger for impact */
     font-weight: 300; /* Light weight from style guide */
-    color: var(--blue-950);
+    color: var(--gray-600);
     line-height: 1.1;
     margin-bottom: 15px;
     max-width: 400px;
-    margin-top:20px;
 }
 
 h4 {

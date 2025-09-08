@@ -1,7 +1,6 @@
 .hero {
     background-image: url("./public/images/bg-intro-mobile.svg");
-    border-repeat: norepeat;
     width: 100%;
     min-width: 320px;
-    
+    height: 400px;
 }

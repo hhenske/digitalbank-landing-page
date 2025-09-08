@@ -1,10 +1,27 @@
 import React from "react";
-import './Header.css'
+import "./Header.css";
+import Mobilemenu from "./Mobilemenu";
 
-const Header = () => {
+interface HeaderProps {
+  menuOpen: boolean;
+  toggleMenu: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ menuOpen, toggleMenu }) => {
   return (
     <header className="hero">
-      <img src="./public/images/image-mockups.png" />
+      <img src="./images/image-mockups.png" alt="Mobile banking mockup" />
+
+      {/* Overlay (sits above hero, behind Mobilemenu) */}
+      {menuOpen && (
+        <div
+          className="menu-overlay"
+          onClick={toggleMenu} // close when clicked
+        ></div>
+      )}
+
+      {/* Mobile Menu (above overlay and header content) */}
+      {menuOpen && <Mobilemenu toggleMenu={toggleMenu} />}
     </header>
   );
 };

@@ -1,30 +1,30 @@
-import React { useState } from "react";
-import './Navbar.css'
-import Mobilemenu from "./Mobilemenu";
+import React from "react";
+import "./Navbar.css";
 
+interface NavbarProps {
+  menuOpen: boolean;
+  toggleMenu: () => void;
+}
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-  };
-
+const Navbar: React.FC<NavbarProps> = ({ menuOpen, toggleMenu }) => {
   return (
     <nav className="navbar">
-      <img className="logo" src="./public/images/logo-dark.svg"></img>
-      <img className="menu-icon" 
-      src={
-        menuOpen ?
-      "./public/images/icon_close.svg"
-      : "./public/images/icon-hamburger.svg"
-      }
-      alt="Menu toggle"
-      onClick={toggleMenu}
+      <img
+        className="logo"
+        src="./images/logo-dark.svg"
+        alt="EasyBank Logo"
+      />
+      <img
+        className="menu-icon"
+        src={
+          menuOpen
+            ? "./images/icon-close.svg"
+            : "./images/icon-hamburger.svg"
+        }
+        alt={menuOpen ? "Close menu" : "Open menu"}
+        onClick={toggleMenu}
       />
     </nav>
-
-    
   );
 };
 

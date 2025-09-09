@@ -32,15 +32,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ toggleMenu }) => {
   }, [toggleMenu]);
 
   return (
-    <>
-      {/* Dark Overlay */}
+    <div className="mobile-menu-container">
+    
       <div 
         className="mobile-menu-overlay" 
         onClick={toggleMenu}
       />
       
-      {/* Menu Container */}
-      <div className="mobile-menu-container">
+
         <nav className="mobile-menu">
           <ul>
             <li>Home</li>
@@ -50,8 +49,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ toggleMenu }) => {
             <li>Careers</li>
           </ul>
         </nav>
-      </div>
-    </>
+      
+    </div>
   );
 };
 

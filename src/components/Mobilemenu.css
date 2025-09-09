@@ -1,26 +1,19 @@
-* {
+.mobile-menu-container {
   background: #fff;
-  border-radius: 8px;
-}
-
-.mobile-menu {
-  position: relative;
-  top: 70px; /* leaves room for navbar */
-  top: -300px;
-  /* margin-left: 20px; */
-  background-color: pink;
-  z-index: 2; /* above overlay, below navbar */
-  text-align: center;
-  
-  /* width: 100px; */
 }
 
 .mobile-menu ul {
+  position: absolute;
+  top: 30px;
+  width: 85%;
   list-style: none;
-  margin: 0;
+  margin: 10px;
   padding: 0;
   background: white;
-  margin: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  z-index: 2;
+  text-align: center;
 }
 
 .mobile-menu li {

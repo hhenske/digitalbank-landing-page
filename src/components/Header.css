@@ -4,16 +4,7 @@
     min-width: 320px;
     height: 400px;
     position: relative;
-}
-
-.menu-overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.05));
-  z-index: 1;
+    overflow: visible;
 }
 
 .hero-image {
@@ -37,10 +28,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.05));
-  border-radius: 10px;
-  z-index: 1;
+  height: 200%;
+  min-height: 400px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0));
+  /* background: red; */
+  /* z-index: 500; */
 }
   
   .navbar {

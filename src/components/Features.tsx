@@ -1,9 +1,21 @@
 import React from "react";
 import './Features.css';
 
-const Features = () => {
+interface FeaturesProps {
+  menuOpen: boolean;
+  toggleMenu: () => void;
+}
+
+const Features: React.FC<FeaturesProps> = ({ menuOpen, toggleMenu }) => {
   return (
     <div className="next-generation">
+         {/* Overlay (sits above hero, behind Mobilemenu) */}
+      {menuOpen && (
+        <div
+          className="menu-overlay"
+          onClick={toggleMenu} // close when clicked
+        ></div>
+      )}
       <section className="feature-header">
           <h1>Next generation digital banking</h1>
           <p>Take your financial life online. Your Digitalbank account will be a one-stop shop for spending, saving, budgeting, investing, and much more.</p>

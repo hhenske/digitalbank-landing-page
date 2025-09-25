@@ -22,10 +22,22 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  /* width: 100%; */
   width: 375px;
   margin: 0 auto;
   font-family: 'Public Sans', sans-serif;
   font-size: 18px;
 }
 
+@media screen and (max-width: 374px) {
+  html, body {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  html, body {
+    min-width: none;
+    width: 100%;
+  }
+}

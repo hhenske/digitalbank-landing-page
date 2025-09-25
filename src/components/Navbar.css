@@ -18,4 +18,8 @@ nav {
     margin-right: 20px;
 }
 
-
+@media screen and (min-width: 699px) {
+  nav {
+    width: 100%;
+  }
+}

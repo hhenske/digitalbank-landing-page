@@ -39,3 +39,20 @@
   position: relative;
   z-index: 3; /* keep logo + icon above overlay/menu */
 }
+
+@media screen and (max-width: 374px) {
+  .hero{
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 699px) {
+    .hero {
+    background-image: url("./public/images/bg-intro-desktop.svg");
+    width: 100%;
+    min-width: 320px;
+    height: 400px;
+    position: relative;
+    overflow: visible;
+    }
+}

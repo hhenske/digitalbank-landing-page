@@ -59,3 +59,9 @@ h4 {
     max-width: 400px;
     margin-top: 0;
 }
+
+@media screen and (max-width: 374px) {
+  .articles-container {
+    width: 320px;
+  }
+}

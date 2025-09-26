@@ -5,6 +5,7 @@
     height: 400px;
     position: relative;
     overflow: visible;
+    background-color: pink;
 }
 
 .hero-image {
@@ -21,6 +22,7 @@
   padding: 0 10px;
   /* width: 100%;
   height: 100%; */
+  background-color: lightblue;
 }
 
 .menu-overlay {
@@ -38,6 +40,7 @@
   .navbar {
   position: relative;
   z-index: 3; /* keep logo + icon above overlay/menu */
+  background: violet;
 }
 
 @media screen and (max-width: 374px) {
@@ -54,5 +57,6 @@
     height: 400px;
     position: relative;
     overflow: visible;
+    
     }
 }

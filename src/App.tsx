@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Features from "./components/Features";
@@ -16,8 +16,12 @@ function App() {
   return (
     <>
       <Navbar menuOpen={menuOpen} toggleMenu={toggleMenu} />
-      <Header menuOpen={menuOpen} toggleMenu={toggleMenu} />
-      <Features />
+      <div className="hero-section">
+        <div className="feature-header">
+          <Header menuOpen={menuOpen} toggleMenu={toggleMenu} />
+        </div>
+      <Features menuOpen={menuOpen} toggleMenu={toggleMenu} />
+      </div>
       <Articles />
       <Footer />
     </>

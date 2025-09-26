@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ menuOpen, toggleMenu }) => {
     <header className="hero">
       <img src="./images/image-mockups.png" alt="Mobile banking mockup" />
 
-      {/* Overlay (sits above hero, behind Mobilemenu) */}
+      {/* Overlay (sits above hero, behind Mobile menu) */}
       {menuOpen && (
         <div
           className="menu-overlay"

@@ -35,9 +35,30 @@ html, body {
   }
 }
 
+.hero-section {
+  display: block;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 @media screen and (min-width: 699px) {
   html, body {
-    min-width: none;
-    width: 100%;
+    max-width: none;
+    min-width: 100%;
+    margin: 0;
   }
+  * {
+    width: auto;
+    padding: 0;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0 0; /* Remove side padding for full width */
+    margin-top: 0; /* Remove top margin so it touches navbar */
+    min-height: 500px; /* Optional: set a min height for the hero area */
+  }
+  
 }

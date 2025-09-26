@@ -9,7 +9,7 @@ interface FeaturesProps {
 const Features: React.FC<FeaturesProps> = ({ menuOpen, toggleMenu }) => {
   return (
     <div className="next-generation">
-         {/* Overlay (sits above hero, behind Mobilemenu) */}
+         {/* Overlay (sits above hero, behind Mobile menu) */}
       {menuOpen && (
         <div
           className="menu-overlay"
